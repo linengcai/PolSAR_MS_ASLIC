@@ -1,2 +1,16 @@
 # PolSAR_MS_ASLIC
 Code of paper: "Multiscale Adaptive PolSAR Image Superpixel Generation Based on Local Iterative Clustering and Polarimetric Scattering Features" 
+
+@article{LI2025307,
+title = {Multiscale adaptive PolSAR image superpixel generation based on local iterative clustering and polarimetric scattering features},
+journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
+volume = {220},
+pages = {307-322},
+year = {2025},
+issn = {0924-2716},
+doi = {https://doi.org/10.1016/j.isprsjprs.2024.12.011},
+url = {https://www.sciencedirect.com/science/article/pii/S0924271624004817},
+author = {Nengcai Li and Deliang Xiang and Xiaokun Sun and Canbin Hu and Yi Su},
+keywords = {Polarimetric Synthetic Aperture Radar (PolSAR), Simple Linear Iterative Clustering (SLIC), Multiscale superpixel, Polarimetric scattering features},
+abstract = {Superpixel generation is an essential preprocessing step for intelligent interpretation of object-level Polarimetric Synthetic Aperture Radar (PolSAR) images. The Simple Linear Iterative Clustering (SLIC) algorithm has become one of the primary methods for superpixel generation in PolSAR images due to its advantages of minimal human intervention and ease of implementation. However, existing SLIC-based superpixel generation methods for PolSAR images often use distance measures based on the complex Wishart distribution as the similarity metric. These methods are not ideal for segmenting heterogeneous regions, and a single superpixel generation result cannot simultaneously extract coarse and fine levels of detail in the image. To address this, this paper proposes a multiscale adaptive superpixel generation method for PolSAR images based on SLIC. To tackle the issue of the complex Wishart distribution’s inaccuracy in modeling urban heterogeneous regions, this paper employs the polarimetric target decomposition method. It extracts the polarimetric scattering features of the land cover, then constructs a similarity measure for these features using Riemannian metric. To achieve multiscale superpixel segmentation in a single superpixel segmentation process, this paper introduces a new method for initializing cluster centers based on polarimetric homogeneity measure. This initialization method assigns denser cluster centers in heterogeneous areas and automatically adjusts the size of the search regions according to the polarimetric homogeneity measure. Finally, a novel clustering distance metric is defined, integrating multiple types of information, including polarimetric scattering feature similarity, power feature similarity, and spatial similarity. This metric uses the polarimetric homogeneity measure to adaptively balance the relative weights between the various similarities. Comparative experiments were conducted using three real PolSAR datasets with state-of-the-art SLIC-based methods (Qin-RW and Yin-HLT). The results demonstrate that the proposed method provides richer multiscale detail information and significantly improves segmentation outcomes. For example, with the AIRSAR dataset and the step size of 42, the proposed method achieves improvements of 16.56% in BR and 12.01% in ASA compared to the Qin-RW method. Source code of the proposed method is made available at https://github.com/linengcai/PolSAR_MS_ASLIC.git.}
+}
